@@ -17,8 +17,9 @@
  * Boston, MA 02110-1301 USA
  */
 
-public class Harvey : Gtk.Application {
-    public Harvey () {
+public class Colors : Gtk.Application {
+
+    public Colors () {
         Object (application_id: "com.github.btkostner.colors",
         flags: ApplicationFlags.FLAGS_NONE);
     }
@@ -66,7 +67,7 @@ public class Harvey : Gtk.Application {
     }
 
     public static int main (string[] args) {
-        var app = new Harvey ();
+        var app = new Colors ();
         return app.run (args);
     }
 }

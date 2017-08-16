@@ -17,53 +17,10 @@
  * Boston, MA 02110-1301 USA
  */
 
-public class Color : Clutter.Color {
+public class Color : Granite.Drawing.Color {
 
-    public static Color from_hsv (float hue, float saturation, float value) {
-
+    public Color (double R, double G, double B, double A) {
+        Object ();
     }
 
-    public float hue {
-        get {
-
-        }
-
-        set {
-
-        }
-    }
-
-    public float saturation {
-        get {
-
-        }
-
-        set {
-
-        }
-    }
-
-    public float value {
-        get {
-
-        }
-
-        set {
-
-        }
-    }
-
-    public float lightness {
-        get {
-
-        }
-
-        set {
-
-        }
-    }
-
-    public void to_hsv (float hue, float saturation, float value) {
-
-    }
 }

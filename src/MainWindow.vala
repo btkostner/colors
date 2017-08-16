@@ -19,4 +19,15 @@
 
 public class MainWindow : Gtk.Window {
 
+    public MainWindow (Gtk.Application application) {
+        Object (
+            application: application,
+            height_request: 1024,
+            icon_name: "com.github.btkostner.colors",
+            resizable: false,
+            title: _("Colors"),
+            width_request: 256
+        );
+    }
+
 }
