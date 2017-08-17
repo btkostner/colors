@@ -27,6 +27,7 @@ executable(
     meson.project_name(),
     'src/Application.vala',
     'src/Color.vala',
+    'src/ColorTile.vala',
     'src/MainWindow.vala',
     asresources,
     c_args: c_args,

@@ -16,3 +16,12 @@
  * Free Software Foundation, Inc., 51 Franklin Street, Fifth Floor,
  * Boston, MA 02110-1301 USA
  */
+
+.color-label {
+    background-color: @colorBackground;
+    box-shadow: inset 0 0 0 1px shade (@colorBackground, 0.4);
+    color: @colorForeground;
+    margin: 0;
+    padding: 12px;
+    transition: all 250ms ease-in-out;
+}

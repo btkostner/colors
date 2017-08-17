@@ -23,4 +23,25 @@ public class Color : Granite.Drawing.Color {
         Object ();
     }
 
+    public string to_rgb () {
+        int r = (int) Math.floor (R * 256);
+        int g = (int) Math.floor (G * 256);
+        int b = (int) Math.floor (B * 256);
+
+        debug ("rgb(%f, %f, %f)", r, g, b);
+
+        return "rgb(%f, %f, %f)".printf (r, g, b);
+    }
+
+    public string to_rgba () {
+        int r = (int) Math.floor (R * 256);
+        int g = (int) Math.floor (G * 256);
+        int b = (int) Math.floor (B * 256);
+        double a = Math.round (A);
+
+        debug ("rgb(%d, %d, %d, %f)", r, g, b, a);
+
+        return "rgba(%d, %d, %d, %f)".printf(r, g, b, a);
+    }
+
 }

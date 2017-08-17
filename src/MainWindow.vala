@@ -19,15 +19,30 @@
 
 public class MainWindow : Gtk.Window {
 
+    public Gtk.Grid grid;
+
     public MainWindow (Gtk.Application application) {
         Object (
             application: application,
             height_request: 1024,
             icon_name: "com.github.btkostner.colors",
-            resizable: false,
+            resizable: true,
             title: _("Colors"),
-            width_request: 256
+            width_request: 128
         );
+    }
+
+    construct {
+        grid = new Gtk.Grid();
+        grid.orientation = Gtk.Orientation.VERTICAL;
+        grid.margin = 0;
+
+        var color_one = new Color(128, 128, 128, 1.0);
+        var color_tile_one = new ColorTile(color_one);
+        grid.add (color_tile_one);
+
+        add (grid);
+        get_style_context ().add_class ("rounded");
     }
 
 }
